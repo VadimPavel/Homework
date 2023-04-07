@@ -1,0 +1,84 @@
+                                         ////////////////// Двоичная система \\\\\\\\\\\\\\\\\\
+
+package numberSystems;
+
+public class BinaryHomework {
+    public static void main(String[] args) {
+        // целое число
+        int v = 560;
+
+        // трансформирую из десятичной в двоичную систему (10 -> 2) (classic way)
+        System.out.println(560 / 2);  // 280
+        System.out.println(560 % 2);         // 0
+
+        System.out.println(280 / 2);  // 140
+        System.out.println(280 % 2);         // 0
+
+        System.out.println(140 / 2);  // 70
+        System.out.println(140 % 2);         // 0
+
+        System.out.println(70 / 2);  // 35
+        System.out.println(70 % 2);          // 0
+
+        System.out.println(35 / 2);  // 17
+        System.out.println(35 % 2);          // 1
+
+        System.out.println(17 / 2);  // 8
+        System.out.println(17 % 2);          // 1
+
+        System.out.println(8 / 2);  // 4
+        System.out.println(8 % 2);           // 0
+
+        System.out.println(4 / 2);  // 2
+        System.out.println(4 % 2);           // 0
+
+        System.out.println(2 / 2);  // 1
+        System.out.println(2 % 2);           // 0
+
+        System.out.println(1 / 2);  // 0 - остонавливаемся
+        System.out.println(1 % 2);           // 1
+
+        // результат -1000110000- бинарное число 560
+        // регистры   9876543210
+
+        // перевод из 10 -> 2 (short way)
+        System.out.println("short way 10->2 = " + Integer.toBinaryString(v));
+
+        // перевод из двоичную в десятичную (classic way)
+        System.out.println(1*Math.pow(2,9) + 1*Math.pow(2,5) + 1*Math.pow(2,4));
+
+        // перевод 2 -> 10 (short way)
+        int v2 = 0b1000110000;
+        System.out.println(v2);
+        
+    }
+}
+
+
+
+
+
+                                            /////////////////// SCANER \\\\\\\\\\\\\\\\\\\\
+
+
+import java.util.Scanner;
+
+public class ScannerExamples {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("enter pls number of day in month: ");
+        int day = sc.nextInt();
+        System.out.println("You've entered " + day);
+
+        System.out.print("Enter pls number of month in year: ");
+        short month = sc.nextShort();
+        System.out.println("You're entered " + month);
+
+        System.out.print("Enter pls your weather temperature outside (double) : ");
+        double t = sc.nextDouble();
+        System.out.println("Your temperature is " + t);
+
+        sc.close();
+    }
+}
