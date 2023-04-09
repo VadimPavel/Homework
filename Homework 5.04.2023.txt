@@ -63,22 +63,27 @@ public class BinaryHomework {
 
 import java.util.Scanner;
 
-public class ScannerExamples {
+public class ScannerHomework {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
-        System.out.print("enter pls number of day in month: ");
-        int day = sc.nextInt();
-        System.out.println("You've entered " + day);
+        System.out.print("enter pls number of house in street: ");
+        int house = scan.nextInt();
+        System.out.println("You've entered " + house);
 
-        System.out.print("Enter pls number of month in year: ");
-        short month = sc.nextShort();
-        System.out.println("You're entered " + month);
+        System.out.print("enter pls the entrance number: ");
+        short entrance = scan.nextShort();
+        System.out.println("You've entered " + entrance);
 
-        System.out.print("Enter pls your weather temperature outside (double) : ");
-        double t = sc.nextDouble();
-        System.out.println("Your temperature is " + t);
+        System.out.print("enter pls the floor number: ");
+        int floor  = scan.nextInt();
+        System.out.println("You've entered " + floor);
 
-        sc.close();
+        System.out.print("enter pls temperature in the home: ");
+        double tmp = scan.nextDouble();
+        System.out.println("You're entered " + tmp);
+
+        scan.close();
+
     }
 }
