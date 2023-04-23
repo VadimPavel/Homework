@@ -1,0 +1,46 @@
+                                    ////////////// переменные типа char,равные 0 \\\\\\\\\\\\\\\
+
+package Homework;
+
+public class Homework1 {
+    public static void main(String[] args) {
+        char q = '0';
+        System.out.println(q);
+
+        System.out.println();
+
+        char t = '0';
+        System.out.println(t);
+
+        System.out.println();
+
+        char m = '0';
+        System.out.println(m);
+    }
+}
+ 
+
+                                /////////////// подход для перевода значения из char в int тремя способами \\\\\\\\\\\\\\\\
+
+
+package Homework;
+
+public class Homework2 {
+    public static void main(String[] args) {
+        // способ 1
+        char q = 'b';
+        int q1 = (int) q;
+        System.out.println((int) q);
+
+        // способ 2
+        char k = '7';
+        int k2 = Integer.parseInt(String.valueOf(k));
+        System.out.println(k2);
+
+        // способ 3
+        char s = 6;
+        int s3 = Character.getNumericValue(s);
+        System.out.println(s3);
+
+    }
+}
