@@ -1,0 +1,66 @@
+                      /////////////////// Class Box and Constructor,volume\\\\\\\\\\\\\\\\\
+                                                (1 Вариант)
+package Homework3;
+
+public class Box{
+    private String width;
+    private int height;
+    private  int length;
+    private  int volume;
+
+
+    public Box(String w, int h, int l, int v) {
+        this.width = w;
+        this.height = h;
+        this.length = l;
+        this.volume = v;
+
+    }
+
+    public static void main(String[] args) {
+        Box box = new Box("50", 90 , 200, 35);
+        box.print();
+    }
+
+    public void print() {
+        System.out.println("width: " + width + "; height: " + height + "; length: " + length + "; volume:" + volume);
+    }
+}
+
+
+                            /////////////// Class Box and Constructor\\\\\\\\\\\\\\\\
+                                         (2 Вариант,вкладка Сlass Box)
+
+package Homework3;
+
+public class Box{
+    private String width;
+    private int height;
+    private  int length;
+    private  int volume;
+
+
+    public Box(String w, int h, int l, int v) {
+        this.width = w;
+        this.height = h;
+        this.length = l;
+        this.volume = v;
+
+    }
+
+    public void print() {
+        System.out.println("width: " + width + "; height: " + height + "; length: " + length + "; volume:" + volume);
+    }
+}
+
+                                  Вывод на экран (вторая вкладка Ecran)
+
+import Homework3.Box;
+
+public class Ecran {
+    public static void main(String[] args) {
+        Box box = new Box("50", 90 , 200, 35);
+        box.print();
+    }
+}
+
